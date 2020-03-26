@@ -1,0 +1,77 @@
+---
+title: "Microbiome figures"
+author: "Jung-Jin Lee"
+date: "3/26/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Cladogram
+
+From https://doi.org/10.1038/s42255-020-0178-9 
+
+![](March_26_2020/cladogram.png)
+
+\newpage
+
+# Co-occurence network
+
+From https://www.nature.com/articles/srep30388
+
+![](March_26_2020/co-occurence.png)
+
+\newpage
+
+# Extended error bars
+
+From https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-015-0091-8
+
+![](March_26_2020/error_bars.png)
+
+\newpage
+
+# Sankey diagram -- change of composition 
+
+From https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0999-x
+
+![](March_26_2020/sankey.png){width="70%"}
+
+\newpage
+
+# Introduction to `ggtext`
+
+From https://wilkelab.org/ggtext/
+
+![](March_26_2020/ggtext_label.png)
+
+```{r, eval = F}
+library(ggplot2)
+library(ggtext)
+
+labels <- c(
+  setosa = "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Iris_setosa.JPG/180px-Iris_setosa.JPG'
+    width='100' /><br>*I. setosa*",
+  virginica = "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Iris_virginica_-_NRCS.jpg/320px-Iris_virginica_-_NRCS.jpg'
+    width='100' /><br>*I. virginica*",
+  versicolor = "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/20140427Iris_versicolor1.jpg/320px-20140427Iris_versicolor1.jpg'
+    width='100' /><br>*I. versicolor*"
+)
+
+ggplot(iris, aes(Species, Sepal.Width)) +
+  geom_boxplot() +
+  scale_x_discrete(
+    name = NULL,
+    labels = labels
+  ) +
+  theme(
+    axis.text.x = element_markdown(color = "black", size = 11)
+  )
+```
+
+
+
+
