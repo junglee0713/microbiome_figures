@@ -1,7 +1,7 @@
 ---
 title: "Microbiome figures"
 author: "Jung-Jin Lee"
-date: "3/26/2020"
+date: "4/2/2020"
 output: pdf_document
 ---
 
@@ -14,7 +14,7 @@ library(tidyverse)
 
 From https://doi.org/10.1038/s42255-020-0178-9 
 
-![](March_26_2020/cladogram.png)
+![](April_2_2020/cladogram.png)
 
 \newpage
 
@@ -22,7 +22,7 @@ From https://doi.org/10.1038/s42255-020-0178-9
 
 From https://www.nature.com/articles/srep30388
 
-![](March_26_2020/co-occurence.png)
+![](April_2_2020/co-occurence.png)
 
 \newpage
 
@@ -30,7 +30,7 @@ From https://www.nature.com/articles/srep30388
 
 From https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-015-0091-8
 
-![](March_26_2020/error_bars.png)
+![](April_2_2020/error_bars.png)
 
 \newpage
 
@@ -38,7 +38,7 @@ From https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-015-009
 
 From https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0999-x
 
-![](March_26_2020/sankey.png){width="70%"}
+![](April_2_2020/sankey.png){width="70%"}
 
 \newpage
 
@@ -46,7 +46,7 @@ From https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0999-x
 
 From https://wilkelab.org/ggtext/
 
-![](March_26_2020/ggtext_label.png)
+![](April_2_2020/ggtext_label.png)
 
 ```{r, eval = F}
 library(ggplot2)
